@@ -137,7 +137,7 @@
                     <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
                          <div class="count-box">
                          <i class="bi bi-headset"></i>
-                         <span id="countVisit"></span>
+                         <span id="countVisit" data-purecounter-start="0" data-purecounter-duration="1" class="purecounter"></span>
                          <p>This page was viewed</p>
                          </div>
                     </div>
@@ -275,6 +275,6 @@
      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
      <script src="assets/bootstrap/js/main.js"></script>
-     <script> AOS.init(); function cb(response) { document.getElementById('countVisit').innerText = response.value; }</script>
+     <script> AOS.init(); function cb(response) { $('#countVisit').attr("data-purecounter-end", response.value); }</script>
      <script async src="https://api.countapi.xyz/hit/letmecodes.github.ioleoignacio/visits?callback=cb"></script>
 </html>
