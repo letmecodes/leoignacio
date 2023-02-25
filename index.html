@@ -21,6 +21,8 @@
      <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css" />
      <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
      <link rel="stylesheet" href="assets/bootstrap/css/style.css" />
+     <script> function cb(response) { $('#countVisit').attr("data-purecounter-end", response.value); }</script>
+     <script async src="https://api.countapi.xyz/hit/letmecodes.github.ioleoignacio/visits?callback=cb"></script>
   </head>
   <body>
           <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
@@ -275,6 +277,5 @@
      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
      <script src="assets/bootstrap/js/main.js"></script>
-     <script> AOS.init(); function cb(response) { $('#countVisit').attr("data-purecounter-end", response.value); }</script>
-     <script async src="https://api.countapi.xyz/hit/letmecodes.github.ioleoignacio/visits?callback=cb"></script>
+     <script> AOS.init(); </script>
 </html>
