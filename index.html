@@ -102,7 +102,7 @@
                     </div>
                     <div class="row">
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-6 col-md-6">
                          <div class="count-box">
                          <i class="bi bi-emoji-smile"></i>
                          <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
@@ -110,7 +110,7 @@
                          </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                    <div class="col-lg-6 col-md-6 mt-5 mt-md-0">
                          <div class="count-box">
                          <i class="bi bi-journal-richtext"></i>
                          <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
@@ -118,7 +118,7 @@
                          </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                    <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
                          <div class="count-box">
                          <i class="bi bi-headset"></i>
                          <span data-purecounter-start="0" data-purecounter-end="156" data-purecounter-duration="1" class="purecounter"></span>
@@ -126,7 +126,15 @@
                          </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                    <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+                         <div class="count-box">
+                         <i class="bi bi-headset"></i>
+                         <span id="countVisit" class="purecounter"></span>
+                         <p>Hours Of Support</p>
+                         </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
                          <div class="count-box">
                          <i class="bi bi-award"></i>
                          <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
@@ -267,5 +275,6 @@
      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
      <script src="assets/bootstrap/js/main.js"></script>
-     <script> AOS.init();</script>
+     <script> AOS.init(); function cb(response) { document.getElementById('countVisit').innerText = response.value; }</script>
+     <script async src="https://api.countapi.xyz/hit/letmecodes.github.ioleoignacio/visits?callback=cb"></script>
 </html>
