@@ -1,3 +1,8 @@
+# leoignacio v2.01 / 28/04/2025 06:40 PM
+# Updated All Data
+~ New Skills Updated
+~ New Task Updated
+
 # leoignacio v1.04 / 05/12/2023 07:20 PM
 # Updated Skills
 ~ Updated Hours of Support
